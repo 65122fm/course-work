@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  padding: 30px 50px;
+}
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+h1 {
+  font-family: Roboto Slab;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 55.76px;
+}
+main p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0%;
+}
+.main-part {
+  width: 46%;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+}
+.img {
+  width: 20%;
+}
+.blocks {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  width: 50%;
+}
+.block {
+  width: 80%;
+}
+h3 {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 32.5px;
+  letter-spacing: 0%;
+}
+.footer-container p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0%;
+}
+@media screen and (min-width: 375px) and (max-width:830px) {
+  .img {
+    display: none;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main-part{
+    width: 100%;
+  }
+  h1 {
+    font-family: Roboto Slab;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 55.76px;
+  }
+  main p {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0%;
+  }
+  
+  .footer-container {
+    display: flex  ;
+    align-items: center;
+    justify-content: flex-start;
+    /* width: 90%; */
+}
+
+.blocks{
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.block{
+  width: 40%;
+}
+}
+@media screen and (min-width: 830px) and (max-width: 1400px) {
+  .img {
+    display: none;
+  }
+  h1 {
+    font-family: Roboto Slab;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32.44px;
+    letter-spacing: 0%;
+  }
+  main p {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0%;
+  }
+  main img {
+    width: 164px;
+    height: 165px;
+  }
+  .footer-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: unset;
+    width: 80%;
+    padding-left: 70px;
+  }
+  h3 {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19.5px;
+    letter-spacing: 0%;
+  }
+  .footer-container p {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14.3px;
+    letter-spacing: 0%;
+  }
+  .blocks {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    width: 60%;
+  }
+  .block {
+    width: 60%;
+  }
+  .main-part {
+    width: 52%;
+}
+}
+/* 
+Masaüstü görünüş — ekranın eni 1400px-dən başlayaraq.
+Planşet görünüşü — ekranın eni 830px-dən başlayaraq.
+Mobil görünüş — ekranın eni 375px-dən başlayaraq. */
